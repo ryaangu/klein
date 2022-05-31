@@ -11,7 +11,7 @@ Below you can see a very simple example that says `hello!` to the console output
 @1:
 	string "hello!\n\0"
 ```
-As you can see above, the text format is a *little* like [x86-64] assembly. What this little code is doing is:
+As you can see above, the text format is a *little* like [x86-64](https://en.wikipedia.org/wiki/X86-64) assembly. What this little code is doing is:
 1. in `@0` label: copy `@1` label address into `%0` register.
 2. in `@0` label: print everything at the `%0` address until it sees a null terminator (0 byte).
 3. in `@1` label: put a string literal into the code.
